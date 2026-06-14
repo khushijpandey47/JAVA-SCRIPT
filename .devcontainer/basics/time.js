@@ -13,3 +13,23 @@ console.log(mycreatedDate);
 console.log(mycreatedDate.toString()); // Tue Jun 17 2026
 console.log(mycreatedDate.toDateString()); // Tue Jun 17 2026
 console.log(mycreatedDate.toTimeString()); // 00:00:00 GMT+0000 (Coordinated Universal Time)
+
+let myBirthday = new Date(1990, 0, 1); // January 1, 1990
+console.log(myBirthday);
+
+const myTimestamp = Date.now(); // Current timestamp in milliseconds
+console.log(myTimestamp);
+console.log(new Date(myTimestamp)); 
+console.log(Date.now());
+
+let newDate = new Date();
+console.log(newDate.getFullYear());
+console.log(newDate.getMonth()); // 0-11 (January is 0)
+console.log(newDate.getDate()); //14
+
+newDate.toLocaleString('default',
+    {weekday:'long',}
+); // 6/14/2024 
+console.log(newDate.toLocaleString('default',
+    {weekday:'long',}
+)); // Monday, June 14, 2024
