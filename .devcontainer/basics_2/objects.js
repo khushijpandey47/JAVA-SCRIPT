@@ -38,6 +38,13 @@ console.log(person.greeting()); // Hello, my name is John and I am 31 years old.
 
 //more on objects
 
+const student={}
+student.name="John"
+student.age=20
+student.grade="A"
+console.log(student); // { name: 'John', age: 20, grade: 'A' }
+
+
 const car = {
     make: 'Toyota',
     model: 'Camry',
@@ -49,6 +56,7 @@ console.log(car); // { make: 'Toyota', model: 'Camry', year: 2020, color: 'red',
 
 //nested objects
 const regularUser = {
+    email: "john.doe@gmail.com",
     fullName: {
         userName: {
             firstName: "John",
@@ -87,3 +95,23 @@ const user=[
     }
 ]
 console.log(user[0].name); // John
+console.log(Object.keys(student)); // [ 'name', 'age', 'grade' ]
+console.log(Object.values(student)); // [ 'John', 20, 'A' ]
+
+console.log(student.hasOwnProperty('name')); // true
+console.log(student.hasOwnProperty('height')); // false
+
+const course ={
+    title: "JavaScript Basics",   
+    price: 499,
+    instructor: "John Doe",
+}
+     course.instructor = "Jane Smith"; // update instructor
+        console.log(course); // { title: 'JavaScript Basics', price: 499, instructor: 'Jane Smith' }
+     const {instructor}= course; // destructuring assignment   
+     console.log(instructor); // Jane Smith
+
+     const navbar=()  => {
+
+     }
+     navbar( company="Tech Solutions")
